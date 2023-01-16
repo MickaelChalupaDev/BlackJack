@@ -1,0 +1,86 @@
+/*.desk, #banque, #carte{
+    margin: 0 auto;
+    width: 500px;
+}*/
+/*@media only screen and (max-width:1000px)*/
+@media only screen and (min-width: 200px){
+
+.desk1{
+    color: white;
+    font-size: 1em;
+    display: block;
+    filter: opacity(60%);
+}
+.titre1{
+    text-align: center;
+    font-size: 1em;   
+    color: aliceblue;
+
+}
+.titre3{
+    color: aliceblue;
+    filter: opacity(1);
+}
+.title{
+    border: 1px;
+    border-color: red;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding-top: 7px;
+    color: aliceblue;
+    background-color: black;
+    background-size: cover;
+    filter:  opacity(80%);
+    border-radius:  30%;
+
+}
+
+.fond{
+    background-image: url("https://wallpaperaccess.com/full/2434381.jpg");
+    
+/*    background-image: url("https://www.blackjack-france.org/diz/blackjack-1.png");
+*/  display: block;
+    width:  100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    background-position:100% 0%;    
+*/} 
+
+.title{
+    color: white;
+    font-size: 1em;    
+}
+
+h1{
+    text-align: center;
+}
+
+#joueur, #reste, #rejoue, #newGame{ 
+    color: white;
+    background-color: rgb(255, 60, 0);
+    font-size: 1em;
+    border-radius: 25%;     
+}
+
+.new{
+    color: white;
+    background-color: rgb(255, 60, 0);
+    font-size: 1em;
+}
+.loader>img{
+    width: 100%;
+}
+
+.loading{
+
+    position: absolute;    
+}
+
+#resultat{
+    font-size: 7em;
+}
+#rejouer, #new{
+    visibility: hidden;
+}
+}

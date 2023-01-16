@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BlackJack</title>
+</head>
+<body class="fond">
+
+                    <!-- CREATION DU LECTEUR POUR LA MUSIQUE DE FOND  -->
+
+ <audio class="sound"src="sound/fond.mp3" autoplay loop="infinite">Votre navigateur ne semble pas supporter ce fichier</audio>
+ 
+                            <!-- DIV POUR BACKROUND DU LOADER -->
+
+<!--     <div class="loader"id="loader"> 
+      <img src="https://store-images.s-microsoft.com/image/apps.53392.13510798886631665.e8a9f22e-d552-4b79-b2bb-9b95a5b077c1.a188196b-3c74-4145-ac91-3e523f192caf?mode=scale&q=90&h=1080&w=1920" >
+    </div>  
+   -->
+                                 <!-- DIV POUR L EN-TETE -->
+    <div class="title">
+        
+            <div class="titre3"><h1 class="titre3" align="center">BlackJack</h1></div>
+        
+    
+
+
+                            <!-- DIV POUR LE FOND DE JEUX -->
+
+    <div class="desk">
+        <p class="titre1" align="center"><b>Les cartes de la banques </b><br><span align="center"class="desk" id="banque"></span></p>
+           
+           
+                    
+        <p class="titre1" align="center"><b>Vos cartes </b><br><span align="center"class="desk" id="carte"></span></p>
+        
+            <div id="score"class="desk1">
+            <p align="center"><b>La banque à : </b><span id="scoreBanque"></span></p>
+            
+            <p align="center"><b>Vous avez : </b><span id="scoreJoueur"></span></p>
+<!--             <p align="center">Carte ou Reste????</p>
+            <span id="reponse"></span>
+ -->    </div>
+                            <!-- DIV POUR LES BOUTONS -->
+
+    <div align="center" class="button" id="button" >
+        <input id="joueur" type="button" value="Carte" onclick="buttonCarte();">
+        <input id="reste" type="button" value="Reste" onclick="buttonReste();">
+        <input hidden id="rejoue" type="button" value="Rejouer" onclick="rejoue();">
+    </div>
+    <br>
+    <div align="center" class="desk">
+        <input id="newGame"type="button" value="Nouvelle Partie" onclick="nouvellePartie();">
+    </div>
+    <div class="Rejouer" id="rejouer">
+        <input aligne="center" id="new" id="new" type="button" value="Nouvelle Partie" onclick="accueil();">
+    </div>
+
+
+ </div> 
+   <p align="center" class="titre1"><span id="fondspan"><span id="resultat"></span></span></p>
+</div>
+
+<script type="text/javascript" src="js/game.js"></script>
+
+<div class="jquery">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript">
+$(window).load(function() {
+// $(".loading").delay("3000").fadeOut("300");
+$(".loader").delay("3000").fadeOut("300"); 
+$(".sound").delay("3000").fadeOut("300");
+$("rejoue").delay("3000").fadeOut("300");}) 
+
+            /*ANIMMATION HIDDEN POUR LE BOUTON NOUVELLE PARTIE*/
+
+ $("#newGame").click(function () {
+     $(this).hide(2000, function  () {
+        $(this).hidden();
+    });
+ });
+
+</script>
+</div>
+
+                          b  <!-- FIN DE LA FONCTION DE LA PAGE DE CHARGEMENT -->
+
+</body>
+</html>
